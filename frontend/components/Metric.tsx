@@ -1,0 +1,3 @@
+export default function Metric({label,value,change}:{label:string,value:string,change?:string}) {
+ return <div className="card p-4"><div className="text-xs font-medium text-[#64748B]">{label}</div><div className="mt-2 text-2xl font-bold tracking-tight">{value}</div>{change && <div className={`mt-1 text-xs font-medium ${change.startsWith("-")?"text-[#DC2626]":"text-[#16A34A]"}`}>{change}</div>}</div>
+}
